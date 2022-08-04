@@ -8,13 +8,13 @@
 }
 
 body{
-    background: linear-gradient(to right, #8FD6E1 10%, #DDDDDD 80% );
+    background: linear-gradient(to right, #444444 5%, #171717 90% );
 }
 
 .nav-container {
     display: flex;
     justify-content: space-between;
-    background: #FFFFFF;
+    background: #DA0037;
     max-width: 90%;
     margin-top: 15px;
     margin-left: 70px;
@@ -29,7 +29,7 @@ a{
 }
 
 a:hover{
-    color: #8FD6E1;
+    color: #EDEDED;
     transition: .4s;
 }
 

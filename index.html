@@ -5,22 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="./logo-hackerman.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./logo-hackerman.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/0f16c4b290.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Challenge Landing Page - E2</title>
   </head>
   <body>
-    <nav class="nav-container">
-      <div class="nav-logo">
-        <a href="#">
-          <img class="img-logo" src="./logo-fsociety.png" alt="logo"/>
-        </a>
-      </div>
-      <ul class="ul-container">
-        <a href="#"><li>Inicio</li></a>
-        <a href="#"><li>Productos</li></a>
-        <a href="#"><li>Clientes</li></a>
-        <a href="#"><li>Contactanos</li></a>
-      </ul>
-    </nav>
+    <header>
+      <img class="img-logo" src="./logo-fsociety.png" alt="logo" />
+      <form action="search">
+        <div>
+          <label for="web-search"></label>
+          <input class="web-search" type="search" placeholder=" Buscar" />
+        </div>
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+      <nav class="nav-container">
+        <ul class="ul-container">
+          <li><a href="#" id="active">Inicio</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Clientes</a></li>
+          <li><a href="#">Contactanos</a></li>
+        </ul>
+      </nav>
+    </header>
   </body>
 </html>

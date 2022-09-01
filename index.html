@@ -10,6 +10,8 @@
       href="./assets/img/logo-hackerman.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="mediaqueri.css" />
+    k
     <script
       src="https://kit.fontawesome.com/0f16c4b290.js"
       crossorigin="anonymous"
@@ -18,35 +20,43 @@
   </head>
   <body>
     <header>
-      <a href="#" class="a-logo"
-        ><img class="img-logo" src="./assets/img/logo-fsociety.png" alt="logo"
-      />
-      </a>
-      <nav class="nav-container">
-        <ul class="ul-container">
-          <li><a href="#" id="active">Inicio</a></li>
-          <li><a href="#">Productos</a></li>
-          <li><a href="#">Clientes</a></li>
-          <li><a href="#">Contactanos</a></li>
-        </ul>
-      </nav>
-      <div class="cart-icon">
-        <label for="cart-label"
-          ><i class="fa-solid fa-cart-shopping"></i
-        ></label>
-        <input type="checkbox" id="cart-label" />
+      <div class="div-header">
+        <a href="#" class="a-logo"
+          ><img
+            class="img-logo"
+            src="./assets/img/logo-fsociety.png"
+            alt="logo"
+          />
+        </a>
+        <nav class="nav-container">
+          <label for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
+          <input type="checkbox" id="toggle-menu" />
+          <ul class="ul-container">
+            <li><a href="#hero" id="active">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contactanos">Locales</a></li>
+            <li><a href="#">Ayuda</a></li>
+          </ul>
+        </nav>
+        <div class="cart-icon">
+          <label for="toggle-cart"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></label>
+          <input type="checkbox" id="toggle-cart" />
+          <div class="cart-toggle">
+        <p>Mi Carrito</p>
+        </div>
+        </div>
       </div>
     </header>
     <main>
       <section id="hero">
         <div class="hero-info">
           <h1>Despierta al hacker dentro de ti</h1>
-          <p>
-            <calidad class="span-hero">calidad y confiabilidad asegurada</span>
-          </p>
+          <p>Indumentaria, calzado y accesorios</p>
           <div class="btns-hero">
-            <button>VER MAS</button>
-            <button>SOBRE NOSOTROS</button>
+            <a href="#productos">Ver Más</a>
+            <a href="#">Sobre Nosotros</a>
           </div>
         </div>
         <div class="img-container">
@@ -54,15 +64,166 @@
             src="https://http2.mlstatic.com/D_NQ_NP_662163-MLM43741193456_102020-O.jpg"
             alt="imagen de portada"
           />
+      </section>
+
+      <section class="description">
+        <p>
+          Somos una empresa familiar
+          <span>con más de 30 años en el mercado</span> y nos logramos adaptar a
+          las necesidades de nuestro público, nuestros productos están
+          desarrolados con las mejores calidades de materia prima.
+        </p>
+      </section>
+
+      <section class="cards" id="productos">
+        <h2>Indumentaria</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img
+              src="https://ae01.alicdn.com/kf/H89e1211eed0a4ddf86274539c9877938c/Camiseta-Vintage-divertida-de-Mr-Robot-para-hombre-camisa-100-de-algod-n-de-FSociety-camiseta.jpg_Q90.jpg_.webp"
+              alt="Remera fsociety"
+            />
+            <p>Camiseta Fsociety</p>
+          </div>
+          <div class="card">
+            <img
+              src="http://cdn.shopify.com/s/files/1/0270/3746/6708/products/mr-robot-fsociety-hoodie-unisex-black-s-966_1024x.jpg?v=1605170035"
+              alt="Buzo fsociety"
+            />
+            <p>Buzo Fsociety</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://ae04.alicdn.com/kf/HTB1._XmRpXXXXb3apXXq6xXFXXXm/Mr-fsociety.jpg"
+              alt="Buzo mr.Robot"
+            />
+            <p>Buzo Mr.Robot</p>
+          </div>
+          <a href="#">Ver Más</a>
         </div>
       </section>
-      <section>
-        <div class="div-description" id="sobre-nosotros">
-          <p>
-            Somos una empresa familiar <span>con más de 30 años en el mercado</span> y nos logramos adaptar a las necesidades de nuestro público en el mercado, nuestros productos están desarrolados con las mejores calidades de materia prima.
-          </p>
+
+      <section class="cards">
+        <h2>Calzado</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img
+              src="https://ae01.alicdn.com/kf/H99b1c406ef45428d8c9c6979af36191c5/Mr-Robot-Zapatillas-deportivas-para-hombre-y-mujer-zapatos-de-tela-informales-cl-sicos-y-divertidos.jpg"
+              alt="Zapatilla fsociety"
+            />
+            <p>Zapatillas Fsociety</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://ae01.alicdn.com/kf/Hf3659e176a92472db274c1d7f232d89d1/Mr-Robot-Zapatillas-deportivas-para-hombre-y-mujer-zapatos-de-tela-informales-cl-sicos-y-divertidos.jpg_Q90.jpg_.webp"
+              alt="Zapatillas elliot"
+            />
+            <p>Zapatillas Elliot</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://ae01.alicdn.com/kf/H049bbcb5140c43f09b8d10f768d8eb29g/Mr-Robot-Zapatillas-deportivas-para-hombre-y-mujer-zapatos-de-tela-informales-cl-sicos-y-divertidos.jpg_640x640.jpg"
+              alt="Zapatillas mr.Robot"
+            />
+            <p>Zapatillas Mr.Robot</p>
+          </div>
+          <a href="#">Ver Más</a>
+        </div>
+      </section>
+
+      <section class="cards">
+        <h2>Accesorios</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img
+              src="https://res.cloudinary.com/teepublic/image/private/s--osNzzEOA--/c_crop,x_10,y_10/c_fit,w_548/c_crop,g_north_west,h_1100,w_554,x_-8,y_-194/l_upload:v1452885561:production:blanks:gawvl5gka1pqwssxidw5/fl_layer_apply,g_north_west,x_-369,y_-271/b_rgb:191919/c_limit,f_jpg,h_630,q_90,w_630/v1474405493/production/designs/692266_1.jpg"
+              alt="Funda de celular elliot"
+            />
+            <p>Funda Celular Elliot</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://ih1.redbubble.net/image.1865658057.2120/ur,backpack_front,square,600x600.jpg"
+              alt="Mochila Fsociety"
+            />
+            <p>Mochila Fsociety</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://ih1.redbubble.net/image.2541364239.5700/ssrco,baseball_cap,product,000000:44f0b734a5,front,square,600x600-bg,f8f8f8.jpg"
+              alt="Gorra Mr.Robot"
+            />
+            <p>Gorra Mr.Robot</p>
+          </div>
+          <a href="#">Ver Más</a>
+        </div>
+      </section>
+      
+      <section class="section-contacto" id="contactanos">
+        <div class="info-container">
+          <h2>Contactanos</h2>
+          <div class="info-contacto">
+            <div>
+              <h3>Jupiter, Australia</h3>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i> Calle falsa 123
+                </li>
+                <li><i class="fa-solid fa-envelope"></i> mail@mail.com</li>
+                <li><i class="fa-solid fa-phone"></i> 011 1212121212</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Esteban Echeverria</h3>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i> Calle falsa 123
+                </li>
+                <li><i class="fa-solid fa-envelope"></i> mail@mail.com</li>
+                <li><i class="fa-solid fa-phone"></i> 011 1212121212</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ul-redes-container">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img
+                    src="/assets/img/logo-instagram.png"
+                    alt="logo instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="/assets/img/logo-facebook.png" alt="logo facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="/assets/img/twitter-logo.png" alt="logo twitter"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="div-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13116.599148676192!2d-58.58868040000001!3d-34.7266186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sar!4v1661881861516!5m2!1sen!2sar"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </section>
     </main>
+    <footer>
+      <div class="div-footer">
+        <img src="/assets/img/logo-fsociety.png" alt="logo-fsociety" />
+        <p>Hecho Por <span>Nahuel Medina</span></p>
+      </div>
+    </footer>
   </body>
 </html>

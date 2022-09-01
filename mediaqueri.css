@@ -1,0 +1,154 @@
+/* tablet */
+
+@media (max-width: 992px) {
+  .nav-container ul {
+    background: linear-gradient(
+      to bottom,
+      var(--second-navbar),
+      var(--nbar-color)
+    );
+    width: 100%;
+    height: calc(150vh - 75px);
+    position: absolute;
+    top: 75px;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 30px;
+    transform: translateX(200%);
+    transition: all 0.5s;
+  }
+  .cart-icon {
+    display: none;
+  }
+  .nav-container i {
+    display: block;
+    padding: 0 10px;
+  }
+
+  #toggle-menu:checked ~ .ul-container {
+    transform: translateX(0%);
+  }
+
+  #hero {
+    text-align: center;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-info {
+    align-items: center;
+  }
+
+  .hero-info h1 {
+    display: block;
+    width: 100%;
+  }
+
+  .hero-info p {
+    max-width: 90%;
+    font-size: 20px;
+  }
+
+  .btns-hero {
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .img-container img {
+    display: none;
+  }
+
+  .cards-container {
+    gap: 20px;
+  }
+
+  .cards-container .card:nth-child(2) {
+    display: none;
+  }
+
+  .ul-redes-container ul {
+    padding: 5px 0;
+  }
+}
+
+/* celular */
+
+@media (max-width: 576px) {
+  .nav-container ul {
+    background: linear-gradient(
+      to bottom,
+      var(--second-navbar),
+      var(--nbar-color)
+    );
+    width: 100%;
+    height: calc(150vh - 75px);
+    position: absolute;
+    top: 75px;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 30px;
+    transform: translateX(200%);
+    transition: all 0.5s;
+  }
+  .cart-icon {
+    display: none;
+  }
+  .nav-container i {
+    display: block;
+    padding: 0 10px;
+  }
+
+  #toggle-menu:checked ~ .ul-container {
+    transform: translateX(0%);
+  }
+
+  #hero h1 {
+    width: 300px;
+  }
+
+  .hero-info p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .btns-hero a {
+    line-height: 15px;
+    width: 150px;
+    height: 45px;
+  }
+
+  .info-contacto {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cards-container .card:nth-child(2) {
+    display: none;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ul-redes-container ul {
+    padding: 5px 0;
+  }
+
+  .div-map iframe {
+    max-width: 250px;
+    max-height: 250px;
+  }
+  .div-footer img {
+    width: 25%;
+  }
+
+  .div-footer p {
+    font-size: 13px;
+  }
+}

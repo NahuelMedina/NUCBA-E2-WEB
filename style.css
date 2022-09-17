@@ -346,8 +346,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 110%;
   padding: 20px 10px;
+  gap: 25px;
 }
 
 .info-contacto ul {

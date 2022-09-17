@@ -72,6 +72,10 @@
   .ul-redes-container ul {
     padding: 5px 0;
   }
+
+  .div-map iframe {
+    max-width: 300px;
+    max-height: 300px;
 }
 
 /* celular */
